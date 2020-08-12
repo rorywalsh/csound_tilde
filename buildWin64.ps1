@@ -58,12 +58,12 @@ $vcpkgTiming = (Get-Date).TimeOfDay
 
 dir  
 cd c:/
-Invoke-WebRequest -Uri "https://github.com/rorywalsh/cabbage/releases/download/v2.3.0/Csound6_x64.zip" -OutFile "C:\Csound6_x64.zip" 
+Invoke-WebRequest -UseBasicParsing  "https://github.com/rorywalsh/cabbage/releases/download/v2.3.0/Csound6_x64.zip" -OutFile "C:\Csound6_x64.zip" 
 7z.exe x Csound6_x64.zip -o"C:/Program Files"
 cd "C:/Program Files/Csound6_x64"
 dir
 cd c:/
-Invoke-WebRequest -Uri "https://cycling74.s3.amazonaws.com/download/max-sdk-8.0.3.zip" -OutFile "C:\max-sdk-8.0.3.zip"
+Invoke-WebRequest -UseBasicParsing  "https://cycling74.s3.amazonaws.com/download/max-sdk-8.0.3.zip" -OutFile "C:\max-sdk-8.0.3.zip"
 7z.exe x C:\max-sdk-8.0.3.zip -o"C:\max-sdk"
 
 cd D:/a/1/s/
