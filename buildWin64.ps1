@@ -58,8 +58,8 @@ $vcpkgTiming = (Get-Date).TimeOfDay
 
 dir  
 cd c:/
-Invoke-WebRequest -Uri "https://github.com/rorywalsh/cabbage/releases/download/v2.3.0/Csound6_x64.zip" -OutFile "C:\csound-windows_x64-6.14.0-862.zip" 
-7z.exe x csound-windows_x64-6.14.0-862.zip -o"C:/Program Files"
+Invoke-WebRequest -Uri "https://github.com/rorywalsh/cabbage/releases/download/v2.3.0/Csound6_x64.zip" -OutFile "C:\Csound6_x64.zip" 
+7z.exe x Csound6_x64.zip -o"C:/Program Files"
 cd "C:/Program Files/Csound6_x64"
 dir
 cd c:/
